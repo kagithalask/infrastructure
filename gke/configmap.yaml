@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: wordpress
+  namespace: eds-api
+data:
+  DATABASE_URL: jdbc:sqlserver://mysql.dataservices.tech:443;databaseName=wordpress;
+  ENVIRONMENT: DEV
+  APISELF_URL: https,<DOMAIN_NAME>,8080
